@@ -8,20 +8,22 @@ I adapted this from an old version of [https://github.com/bentasker/Wake-On-Lan-
 Usage
 -------
 
-> wol.py \[hostname\]
+`wol.py [hostname]`
 
 or
 
-> wol.py list
+`wol.py list`
 
 
 Configuration File
 --------------------
 
-The configuration file is a basic INI file, containing one section per host;
+The configuration file is a basic INI file, containing one section per host:
 
-> \[General\]
-> broadcast=192.168.1.255
->
-> \[MyPc\]
-> mac=00:13:0d:e4:60:61
+```
+[General]
+broadcast=192.168.1.255
+
+[MyPc]
+mac=00:13:0d:e4:60:61
+```
